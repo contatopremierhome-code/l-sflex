@@ -1,3 +1,23 @@
+import Header from '@/components/layout/header';
+import Footer from '@/components/layout/footer';
+import Hero from '@/components/sections/hero';
+import HowItWorks from '@/components/sections/how-it-works';
+import Benefits from '@/components/sections/benefits';
+import Partners from '@/components/sections/partners';
+import Cta from '@/components/sections/cta';
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="flex min-h-screen flex-col">
+      <Header />
+      <main className="flex-grow">
+        <Hero />
+        <HowItWorks />
+        <Benefits />
+        <Partners />
+        <Cta />
+      </main>
+      <Footer />
+    </div>
+  );
 }
