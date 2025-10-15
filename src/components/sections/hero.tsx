@@ -25,7 +25,7 @@ export default function Hero() {
             >
               <a href="#precos">Ver Preços</a>
             </Button>
-            <Button size="lg" variant="outline" asChild>
+            <Button size="lg" asChild>
               <a href="#regioes-atendidas">Áreas de Cobertura</a>
             </Button>
           </div>
