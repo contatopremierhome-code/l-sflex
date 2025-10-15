@@ -17,13 +17,18 @@ export default function Hero() {
             Atendemos São Paulo com agilidade, rastreamento em tempo real e
             retirada no local. Sem quantidade mínima de pacotes!
           </p>
-          <Button
-            size="lg"
-            className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90"
-            asChild
-          >
-            <a href="#precos">Quero Vender Mais</a>
-          </Button>
+          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+            <Button
+              size="lg"
+              className="bg-accent text-accent-foreground hover:bg-accent/90"
+              asChild
+            >
+              <a href="#precos">Ver Preços</a>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <a href="#regioes-atendidas">Áreas de Cobertura</a>
+            </Button>
+          </div>
         </div>
         <div className="flex justify-center">
           {heroImage && (
