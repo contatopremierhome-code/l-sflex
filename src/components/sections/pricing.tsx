@@ -42,7 +42,7 @@ const tiers = [
         alt="Magalu Logo"
         width={140}
         height={48}
-        className="h-12 w-auto"
+        className="h-16 w-auto"
       />
     ),
   },
