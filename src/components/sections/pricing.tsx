@@ -1,8 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check } from 'lucide-react';
-import { MercadoLivreLogo } from '../icons/mercadolivre-logo';
-import { ShopeeLogo } from '../icons/shopee-logo';
 import Image from 'next/image';
 
 const tiers = [
@@ -17,7 +15,15 @@ const tiers = [
     ],
     buttonText: 'Contratar Agora',
     href: 'https://wa.me/5511993801750?text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+contratar+o+plano+Mercado+Livre+Flex%21',
-    logo: <MercadoLivreLogo className="h-6 text-foreground" />,
+    logo: (
+      <Image
+        src="https://i.imgur.com/U7qEiqW.png"
+        alt="Mercado Livre Logo"
+        width={140}
+        height={35}
+        className="h-9 w-auto"
+      />
+    ),
   },
   {
     name: 'Magalu',
@@ -51,7 +57,15 @@ const tiers = [
     ],
     buttonText: 'Contratar Agora',
     href: 'https://wa.me/5511993801750?text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+contratar+o+plano+Shopee%21',
-    logo: <ShopeeLogo className="h-10 text-foreground" />,
+    logo: (
+      <Image
+        src="https://i.imgur.com/WGCDbGk.png"
+        alt="Shopee Logo"
+        width={140}
+        height={40}
+        className="h-10 w-auto"
+      />
+    ),
   },
 ];
 
