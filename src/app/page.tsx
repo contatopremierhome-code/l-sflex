@@ -11,6 +11,7 @@ import ImageGallery from '@/components/sections/image-gallery';
 import PackageSize from '@/components/sections/package-size';
 import Faq from '@/components/sections/faq';
 import WorkWithUs from '@/components/sections/work-with-us';
+import HowItWorksFlow from '@/components/sections/how-it-works-flow';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <HowItWorksFlow />
         <HowItWorks />
         <ImageGallery />
         <PackageSize />
