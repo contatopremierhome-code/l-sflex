@@ -23,7 +23,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'https,',
         hostname: 'picsum.photos',
         port: '',
         pathname: '/**',
@@ -43,6 +43,18 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'http2.mlstatic.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.bitmag.com.br',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.belohorizonte.com.br',
         port: '',
         pathname: '/**',
       },

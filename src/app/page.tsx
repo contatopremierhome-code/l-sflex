@@ -7,6 +7,7 @@ import Partners from '@/components/sections/partners';
 import Pricing from '@/components/sections/pricing';
 import Cta from '@/components/sections/cta';
 import AttendedRegions from '@/components/sections/attended-regions';
+import ImageGallery from '@/components/sections/image-gallery';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <HowItWorks />
+        <ImageGallery />
         <Benefits />
         <Partners />
         <Pricing />
