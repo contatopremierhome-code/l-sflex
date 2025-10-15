@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { WhatsappIcon } from '../icons/whatsapp-icon';
 
 export default function WhatsappButton() {
   return (
@@ -9,12 +9,7 @@ export default function WhatsappButton() {
       className="fixed bottom-6 right-6 z-50 rounded-full bg-green-500 p-3 shadow-lg transition-transform hover:scale-110"
       aria-label="Entre em contato pelo WhatsApp"
     >
-      <Image
-        src="https://i.imgur.com/JIhPfly.png"
-        alt="WhatsApp"
-        width={32}
-        height={32}
-      />
+      <WhatsappIcon className="h-8 w-8 text-white" />
     </a>
   );
 }
