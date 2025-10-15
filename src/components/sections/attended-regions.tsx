@@ -7,7 +7,7 @@ import {
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
 import { Button } from '@/components/ui/button';
-import { ChevronsUpDown } from 'lucide-react';
+import { ChevronsUpDown, MapPin } from 'lucide-react';
 import Image from 'next/image';
 
 const regions = [
@@ -78,16 +78,28 @@ export default function AttendedRegions() {
         </div>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="w-full max-w-4xl mx-auto">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-muted-foreground">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {visibleRegions.map((region) => (
-                <div key={region}>{region}</div>
+                <div
+                  key={region}
+                  className="flex items-center gap-2 text-muted-foreground"
+                >
+                  <MapPin className="h-4 w-4 text-primary" />
+                  <span>{region}</span>
+                </div>
               ))}
             </div>
             <Collapsible open={isOpen} onOpenChange={setIsOpen}>
               <CollapsibleContent>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-muted-foreground mt-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
                   {hiddenRegions.map((region) => (
-                    <div key={region}>{region}</div>
+                    <div
+                      key={region}
+                      className="flex items-center gap-2 text-muted-foreground"
+                    >
+                      <MapPin className="h-4 w-4 text-primary" />
+                      <span>{region}</span>
+                    </div>
                   ))}
                 </div>
               </CollapsibleContent>
