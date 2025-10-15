@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
         <div className="flex justify-center">
           <Image
-            src="https://i.imgur.com/pMWpAcH.png"
+            src="https://i.imgur.com/6cLZ6an.png"
             alt="Entregador organizando pacotes em uma van"
             data-ai-hint="delivery van"
             width={600}
