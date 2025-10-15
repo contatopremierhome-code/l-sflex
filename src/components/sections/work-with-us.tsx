@@ -20,32 +20,45 @@ export default function WorkWithUs() {
   return (
     <section className="py-12 lg:py-24" id="trabalhe-conosco">
       <div className="container">
-        <Card className="mx-auto max-w-3xl text-center shadow-lg">
-          <CardHeader>
-            <CardTitle className="text-3xl font-bold tracking-tight md:text-4xl font-headline">
-              Trabalhe Conosco
-            </CardTitle>
-            <CardDescription className="text-lg">
-              Faça parte da nossa equipe de entregadores e cresça conosco!
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-8">
-            <div>
-              <h3 className="mb-4 text-xl font-semibold">Benefícios</h3>
-              <ul className="grid grid-cols-2 gap-x-6 gap-y-2 text-left md:grid-cols-3">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold tracking-tight md:text-4xl font-headline">
+            Trabalhe Conosco
+          </h2>
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+            Faça parte da nossa equipe de entregadores e cresça conosco!
+          </p>
+        </div>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+          <Card className="shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-2xl font-semibold">
+                Benefícios
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-3">
                 {benefits.map((benefit) => (
-                  <li key={benefit} className="flex items-center gap-2">
-                    <Check className="h-5 w-5 text-green-500" />
+                  <li key={benefit} className="flex items-center gap-3">
+                    <Check className="h-5 w-5 text-green-500 flex-shrink-0" />
                     <span className="text-muted-foreground">{benefit}</span>
                   </li>
                 ))}
               </ul>
-            </div>
-            <div>
-              <h3 className="mb-2 text-xl font-semibold">Entre em Contato</h3>
-              <p className="mb-4 text-muted-foreground">
-                Interessado em fazer parte da nossa equipe? Entre em contato via
-                WhatsApp:
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-2xl font-semibold">
+                Entre em Contato
+              </CardTitle>
+              <CardDescription>
+                Interessado em fazer parte da nossa equipe?
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-col items-center justify-center text-center h-full">
+              <p className="mb-6 text-muted-foreground">
+                Entre em contato via WhatsApp:
               </p>
               <Button size="lg" asChild>
                 <a
@@ -56,9 +69,9 @@ export default function WorkWithUs() {
                   Candidate-se Agora
                 </a>
               </Button>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );
