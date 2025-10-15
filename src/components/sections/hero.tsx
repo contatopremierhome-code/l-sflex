@@ -26,14 +26,14 @@ export default function Hero() {
               <a href="#precos">Ver Preços</a>
             </Button>
             <Button size="lg" asChild>
-              <a href="#areas-cobertura">Áreas de Cobertura</a>
+              <a href="#regioes-atendidas">Áreas de Cobertura</a>
             </Button>
           </div>
         </div>
         <div className="flex justify-center">
           {heroImage && (
             <Image
-              src="https://i.imgur.com/6cLZ6an.png"
+              src="https://i.imgur.com/pMWpAcH.png"
               alt={heroImage.description}
               data-ai-hint={heroImage.imageHint}
               width={600}
