@@ -47,7 +47,7 @@ export default function WorkWithUs() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg">
+          <Card className="shadow-lg flex flex-col">
             <CardHeader>
               <CardTitle className="text-2xl font-semibold">
                 Entre em Contato
@@ -56,7 +56,7 @@ export default function WorkWithUs() {
                 Interessado em fazer parte da nossa equipe?
               </CardDescription>
             </CardHeader>
-            <CardContent className="flex flex-col items-center justify-center text-center h-full">
+            <CardContent className="flex flex-1 flex-col items-center justify-center text-center">
               <p className="mb-6 text-muted-foreground">
                 Entre em contato via WhatsApp:
               </p>

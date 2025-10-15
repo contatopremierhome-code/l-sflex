@@ -42,7 +42,7 @@ export default function Warehouses() {
             5 galpões estrategicamente localizados para melhor atender você:
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {warehouses.map((warehouse) => (
             <Card
               key={warehouse.name}

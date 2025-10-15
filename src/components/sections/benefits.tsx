@@ -39,7 +39,7 @@ export default function Benefits() {
             Tudo que você precisa para escalar suas vendas online.
           </p>
         </div>
-        <div className="mt-12 grid gap-10 md:grid-cols-2">
+        <div className="mt-12 grid gap-10 sm:grid-cols-2">
           {benefits.map((benefit, index) => (
             <div key={index} className="flex items-start gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary text-primary-foreground">

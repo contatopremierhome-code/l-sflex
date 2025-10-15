@@ -70,7 +70,7 @@ export default function HowItWorks() {
             Tudo que você precisa para escalar suas vendas online com tranquilidade.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {benefits.map((benefit, index) => (
             <Card
               key={index}

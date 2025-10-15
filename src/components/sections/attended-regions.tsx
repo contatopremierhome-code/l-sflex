@@ -62,8 +62,8 @@ const regions = [
   'Suzano',
 ];
 
-const visibleRegions = regions.slice(0, 5);
-const hiddenRegions = regions.slice(5);
+const visibleRegions = regions.slice(0, 6);
+const hiddenRegions = regions.slice(6);
 
 export default function AttendedRegions() {
   const [isOpen, setIsOpen] = useState(false);
