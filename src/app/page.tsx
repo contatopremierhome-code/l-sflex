@@ -5,7 +5,7 @@ import HowItWorks from '@/components/sections/how-it-works';
 import Benefits from '@/components/sections/benefits';
 import Partners from '@/components/sections/partners';
 import Pricing from '@/components/sections/pricing';
-import Cta from '@/components/sections/cta';
+import Testimonials from '@/components/sections/testimonials';
 import AttendedRegions from '@/components/sections/attended-regions';
 import ImageGallery from '@/components/sections/image-gallery';
 import PackageSize from '@/components/sections/package-size';
@@ -27,7 +27,7 @@ export default function Home() {
         <Pricing />
         <AttendedRegions />
         <Faq />
-        <Cta />
+        <Testimonials />
       </main>
       <Footer />
     </div>
