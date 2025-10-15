@@ -21,7 +21,7 @@ export default function PackageSize() {
               Tamanho Máximo de Encomenda
             </CardTitle>
             <p className="mt-4 text-lg text-muted-foreground">
-              Aceitamos pacotes de até 80x80cm – entregamos até pneu de moto se
+              Aceitamos pacotes de até <strong className="font-semibold text-foreground">80x80cm</strong> – entregamos até <strong className="font-semibold text-foreground">pneu de moto</strong> se
               precisar.
             </p>
           </CardContent>
