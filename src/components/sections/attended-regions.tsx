@@ -61,6 +61,9 @@ const regions = [
   'Suzano',
 ];
 
+const visibleRegions = regions.slice(0, 5);
+const hiddenRegions = regions.slice(5);
+
 export default function AttendedRegions() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -72,27 +75,30 @@ export default function AttendedRegions() {
             Regiões Atendidas
           </h2>
         </div>
-        <Collapsible
-          open={isOpen}
-          onOpenChange={setIsOpen}
-          className="w-full max-w-4xl mx-auto mt-8"
-        >
-          <CollapsibleContent>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 text-muted-foreground">
-              {regions.map((region) => (
-                <div key={region}>{region}</div>
-              ))}
-            </div>
-          </CollapsibleContent>
-          <div className="flex justify-center mt-6">
-            <CollapsibleTrigger asChild>
-              <Button variant="outline">
-                <ChevronsUpDown className="mr-2 h-4 w-4" />
-                {isOpen ? 'Mostrar Menos' : 'Mostrar Mais'}
-              </Button>
-            </CollapsibleTrigger>
+        <div className="w-full max-w-4xl mx-auto mt-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 text-muted-foreground">
+            {visibleRegions.map((region) => (
+              <div key={region}>{region}</div>
+            ))}
           </div>
-        </Collapsible>
+          <Collapsible open={isOpen} onOpenChange={setIsOpen}>
+            <CollapsibleContent>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 text-muted-foreground mt-4">
+                {hiddenRegions.map((region) => (
+                  <div key={region}>{region}</div>
+                ))}
+              </div>
+            </CollapsibleContent>
+            <div className="flex justify-center mt-6">
+              <CollapsibleTrigger asChild>
+                <Button variant="outline">
+                  <ChevronsUpDown className="mr-2 h-4 w-4" />
+                  {isOpen ? 'Mostrar Menos' : 'Mostrar Mais'}
+                </Button>
+              </CollapsibleTrigger>
+            </div>
+          </Collapsible>
+        </div>
       </div>
     </section>
   );
