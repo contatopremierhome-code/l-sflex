@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Smartphone, Package, Truck } from 'lucide-react';
+import { Smartphone, Package, Truck, CreditCard } from 'lucide-react';
 
 const steps = [
   {
@@ -21,6 +21,12 @@ const steps = [
     title: 'Entregamos no mesmo dia',
     description: 'Seus clientes recebem os produtos no mesmo dia até às 21h.',
     step: 3,
+  },
+  {
+    icon: <CreditCard className="h-10 w-10 text-primary" />,
+    title: 'Pagamento',
+    description: 'O cliente paga só no final da quinzena.',
+    step: 4,
   },
 ];
 
@@ -47,7 +53,7 @@ export default function HowItWorksFlow() {
               <div className="relative mx-auto h-0.5 w-[calc(100%-12rem)] bg-border"></div>
             </div>
 
-            <div className="relative grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-8">
+            <div className="relative grid grid-cols-1 gap-16 md:grid-cols-4 md:gap-8">
               {steps.map((step) => (
                 <div key={step.step} className="relative text-center">
                   <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold text-lg z-10 ring-8 ring-background">
