@@ -7,7 +7,7 @@ import { Menu } from 'lucide-react';
 const navLinks = [
   { href: '#beneficios', label: 'Benefícios' },
   { href: '#precos', label: 'Preços' },
-  { href: '#areas-cobertura', label: 'Cobertura' },
+  { href: '#regioes-atendidas', label: 'Cobertura' },
   { href: '#faq', label: 'Dúvidas' },
   { href: '#depoimentos', label: 'Depoimentos' },
   { href: '#trabalhe-conosco', label: 'Trabalhe Conosco' },

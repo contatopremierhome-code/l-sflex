@@ -9,7 +9,6 @@ import Testimonials from '@/components/sections/testimonials';
 import AttendedRegions from '@/components/sections/attended-regions';
 import ImageGallery from '@/components/sections/image-gallery';
 import PackageSize from '@/components/sections/package-size';
-import Warehouses from '@/components/sections/warehouses';
 import Faq from '@/components/sections/faq';
 import WorkWithUs from '@/components/sections/work-with-us';
 
@@ -22,7 +21,6 @@ export default function Home() {
         <HowItWorks />
         <ImageGallery />
         <PackageSize />
-        <Warehouses />
         <Benefits />
         <Partners />
         <Pricing />
