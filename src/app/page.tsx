@@ -6,6 +6,7 @@ import Benefits from '@/components/sections/benefits';
 import Partners from '@/components/sections/partners';
 import Pricing from '@/components/sections/pricing';
 import Cta from '@/components/sections/cta';
+import AttendedRegions from '@/components/sections/attended-regions';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Benefits />
         <Partners />
         <Pricing />
+        <AttendedRegions />
         <Cta />
       </main>
       <Footer />
