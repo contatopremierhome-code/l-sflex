@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Smartphone, Truck, CheckCircle } from 'lucide-react';
+import { Smartphone, Package, Truck } from 'lucide-react';
 
 const steps = [
   {
@@ -10,14 +10,14 @@ const steps = [
     step: 1,
   },
   {
-    icon: <Truck className="h-10 w-10 text-primary" />,
+    icon: <Package className="h-10 w-10 text-primary" />,
     title: 'Coletamos os pedidos',
     description:
       'Seus envios são coletados por nossos entregadores em seu endereço.',
     step: 2,
   },
   {
-    icon: <CheckCircle className="h-10 w-10 text-primary" />,
+    icon: <Truck className="h-10 w-10 text-primary" />,
     title: 'Entregamos no mesmo dia',
     description: 'Seus clientes recebem os produtos no mesmo dia até às 21h.',
     step: 3,
@@ -37,41 +37,30 @@ export default function HowItWorksFlow() {
             Shopee
           </p>
         </div>
-        <div className="mt-16">
+        <div className="mt-20">
           <div className="relative">
-            {/* Dotted line for desktop */}
+            {/* Solid line for desktop */}
             <div
               aria-hidden="true"
-              className="absolute left-0 top-1/2 hidden w-full -translate-y-1/2 md:block"
+              className="absolute left-0 top-5 hidden w-full md:block"
             >
-              <div className="relative mx-auto h-0.5 w-[calc(100%-10rem)] bg-transparent">
-                <div className="absolute inset-0 h-full w-full bg-repeat-x [background-image:linear-gradient(to_right,hsl(var(--border))_40%,transparent_0%)] [background-size:1rem_1px]"></div>
-              </div>
+              <div className="relative mx-auto h-0.5 w-[calc(100%-12rem)] bg-border"></div>
             </div>
 
-            <div className="relative grid grid-cols-1 gap-12 md:grid-cols-3">
+            <div className="relative grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-8">
               {steps.map((step) => (
-                <Card
-                  key={step.step}
-                  className="text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl relative bg-card"
-                >
-                  <CardHeader>
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg z-10">
-                      {step.step}
-                    </div>
-                    <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 mt-6">
-                      {step.icon}
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <CardTitle className="text-xl font-semibold">
-                      {step.title}
-                    </CardTitle>
-                    <p className="mt-2 text-muted-foreground">
-                      {step.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                <div key={step.step} className="relative text-center">
+                  <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold text-lg z-10 ring-8 ring-background">
+                    {step.step}
+                  </div>
+                  <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full mt-6">
+                    {step.icon}
+                  </div>
+                  <h3 className="mt-4 text-xl font-semibold">{step.title}</h3>
+                  <p className="mt-2 text-muted-foreground">
+                    {step.description}
+                  </p>
+                </div>
               ))}
             </div>
           </div>
