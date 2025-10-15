@@ -39,8 +39,8 @@ export default function HowItWorksFlow() {
             🎯 Como Funciona Nosso Serviço
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Processo simples e eficiente para suas entregas no Mercado Livre e
-            Shopee
+            Processo simples e eficiente para suas entregas no Mercado Livre,
+            Shopee e Magalu
           </p>
         </div>
         <div className="mt-20">
