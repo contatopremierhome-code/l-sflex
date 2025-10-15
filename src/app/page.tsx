@@ -8,6 +8,7 @@ import Pricing from '@/components/sections/pricing';
 import Cta from '@/components/sections/cta';
 import AttendedRegions from '@/components/sections/attended-regions';
 import ImageGallery from '@/components/sections/image-gallery';
+import PackageSize from '@/components/sections/package-size';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <HowItWorks />
         <ImageGallery />
+        <PackageSize />
         <Benefits />
         <Partners />
         <Pricing />
