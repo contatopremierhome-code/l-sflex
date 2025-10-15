@@ -35,7 +35,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <Button asChild className="hidden md:flex">
             <a
-              href="https://wa.me/5511993801750"
+              href="https://api.whatsapp.com/send/?phone=5511993801750&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais%21%21&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -66,7 +66,7 @@ export default function Header() {
                 </nav>
                 <Button asChild>
                   <a
-                    href="https://wa.me/5511993801750"
+                    href="https://api.whatsapp.com/send/?phone=5511993801750&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais%21%21&type=phone_number&app_absent=0"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
