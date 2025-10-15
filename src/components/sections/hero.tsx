@@ -1,10 +1,7 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Hero() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
-
   return (
     <section className="bg-background py-12 lg:py-24">
       <div className="container grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
@@ -31,17 +28,15 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex justify-center">
-          {heroImage && (
-            <Image
-              src="https://i.imgur.com/pMWpAcH.png"
-              alt={heroImage.description}
-              data-ai-hint={heroImage.imageHint}
-              width={600}
-              height={400}
-              className="rounded-lg object-cover shadow-lg"
-              priority
-            />
-          )}
+          <Image
+            src="https://i.imgur.com/pMWpAcH.png"
+            alt="Entregador organizando pacotes em uma van"
+            data-ai-hint="delivery van"
+            width={600}
+            height={400}
+            className="rounded-lg object-cover shadow-lg"
+            priority
+          />
         </div>
       </div>
     </section>
