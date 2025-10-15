@@ -88,15 +88,19 @@ export default {
             height: '0',
           },
         },
-        'pulse-whatsapp': {
-          '0%, 100%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(1.1)' },
+        'jump-whatsapp': {
+          '0%, 100%': {
+            transform: 'translateY(0)',
+          },
+          '50%': {
+            transform: 'translateY(-8px)',
+          },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'pulse-whatsapp': 'pulse-whatsapp 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'jump-whatsapp': 'jump-whatsapp 1.5s ease-in-out infinite',
       },
     },
   },
