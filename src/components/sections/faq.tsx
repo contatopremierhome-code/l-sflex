@@ -4,6 +4,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 
 const faqItems = [
   {
@@ -47,29 +53,31 @@ export default function Faq() {
   return (
     <section className="py-12 lg:py-24" id="faq">
       <div className="container">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl font-headline">
-            Dúvidas Frequentes
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Encontre respostas para as perguntas mais comuns sobre nossos
-            serviços.
-          </p>
-        </div>
-        <div className="mt-12 max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="w-full">
-            {faqItems.map((item, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left font-semibold">
-                  {item.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  {item.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
+        <Card className="max-w-4xl mx-auto shadow-lg">
+          <CardHeader className="text-center">
+            <CardTitle className="text-3xl font-bold tracking-tight md:text-4xl font-headline">
+              Dúvidas Frequentes
+            </CardTitle>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+              Encontre respostas para as perguntas mais comuns sobre nossos
+              serviços.
+            </p>
+          </CardHeader>
+          <CardContent>
+            <Accordion type="single" collapsible className="w-full">
+              {faqItems.map((item, index) => (
+                <AccordionItem key={index} value={`item-${index}`}>
+                  <AccordionTrigger className="text-left font-semibold">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );
