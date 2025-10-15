@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const tiers = [
   {
-    name: 'Mercado Livre Flex',
+    name: 'Mercado Livre',
     price: 'R$ 13',
     features: [
       'Entrega no mesmo dia',
