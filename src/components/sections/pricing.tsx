@@ -38,11 +38,11 @@ const tiers = [
     href: 'https://wa.me/5511993801750?text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+contratar+o+plano+Magalu%21',
     logo: (
       <Image
-        src="https://i.imgur.com/U7qEiqW.png"
-        alt="Mercado Livre Logo"
+        src="https://i.imgur.com/nrA4MEk.png"
+        alt="Magalu Logo"
         width={140}
-        height={35}
-        className="h-9 w-auto"
+        height={40}
+        className="h-10 w-auto"
       />
     ),
   },
