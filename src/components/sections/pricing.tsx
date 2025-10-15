@@ -41,8 +41,8 @@ const tiers = [
         src="https://i.imgur.com/nrA4MEk.png"
         alt="Magalu Logo"
         width={140}
-        height={40}
-        className="h-10 w-auto"
+        height={48}
+        className="h-12 w-auto"
       />
     ),
   },
@@ -90,7 +90,7 @@ export default function Pricing() {
               className="flex flex-col rounded-lg border-2 border-primary/50 shadow-lg transition-transform hover:scale-105"
             >
               <CardHeader className="items-center">
-                <div className="flex items-center gap-4 h-10">{tier.logo}</div>
+                <div className="flex items-center gap-4 h-12">{tier.logo}</div>
                 <CardTitle className="text-2xl font-semibold mt-4">
                   {tier.name}
                 </CardTitle>
