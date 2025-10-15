@@ -76,7 +76,7 @@ export default function AttendedRegions() {
             Regiões Atendidas
           </h2>
         </div>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="mt-8 flex flex-col gap-12 items-center">
           <div className="w-full max-w-4xl mx-auto">
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {visibleRegions.map((region) => (
@@ -113,11 +113,11 @@ export default function AttendedRegions() {
               </div>
             </Collapsible>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center w-full">
             <Image
               src="https://http2.mlstatic.com/storage/cx-support-fcm-api/fcm-pub-os-prod/cx-support-mario-frontend/andrdiaz/mapa%20sao%20paulo_mlb.png"
               alt="Mapa de regiões atendidas em São Paulo"
-              width={600}
+              width={800}
               height={600}
               className="rounded-lg object-contain"
             />
