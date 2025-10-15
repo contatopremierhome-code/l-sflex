@@ -8,6 +8,7 @@ import {
 } from '@/components/ui/collapsible';
 import { Button } from '@/components/ui/button';
 import { ChevronsUpDown } from 'lucide-react';
+import Image from 'next/image';
 
 const regions = [
   'Centro',
@@ -75,29 +76,40 @@ export default function AttendedRegions() {
             Regiões Atendidas
           </h2>
         </div>
-        <div className="w-full max-w-4xl mx-auto mt-8">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 text-muted-foreground">
-            {visibleRegions.map((region) => (
-              <div key={region}>{region}</div>
-            ))}
-          </div>
-          <Collapsible open={isOpen} onOpenChange={setIsOpen}>
-            <CollapsibleContent>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 text-muted-foreground mt-4">
-                {hiddenRegions.map((region) => (
-                  <div key={region}>{region}</div>
-                ))}
-              </div>
-            </CollapsibleContent>
-            <div className="flex justify-center mt-6">
-              <CollapsibleTrigger asChild>
-                <Button variant="outline">
-                  <ChevronsUpDown className="mr-2 h-4 w-4" />
-                  {isOpen ? 'Mostrar Menos' : 'Mostrar Mais'}
-                </Button>
-              </CollapsibleTrigger>
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="w-full max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-muted-foreground">
+              {visibleRegions.map((region) => (
+                <div key={region}>{region}</div>
+              ))}
             </div>
-          </Collapsible>
+            <Collapsible open={isOpen} onOpenChange={setIsOpen}>
+              <CollapsibleContent>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-muted-foreground mt-4">
+                  {hiddenRegions.map((region) => (
+                    <div key={region}>{region}</div>
+                  ))}
+                </div>
+              </CollapsibleContent>
+              <div className="flex justify-center mt-6">
+                <CollapsibleTrigger asChild>
+                  <Button variant="outline">
+                    <ChevronsUpDown className="mr-2 h-4 w-4" />
+                    {isOpen ? 'Mostrar Menos' : 'Mostrar Mais'}
+                  </Button>
+                </CollapsibleTrigger>
+              </div>
+            </Collapsible>
+          </div>
+          <div className="flex justify-center">
+            <Image
+              src="https://http2.mlstatic.com/storage/cx-support-fcm-api/fcm-pub-os-prod/cx-support-mario-frontend/andrdiaz/mapa%20sao%20paulo_mlb.png"
+              alt="Mapa de regiões atendidas em São Paulo"
+              width={600}
+              height={600}
+              className="rounded-lg object-contain"
+            />
+          </div>
         </div>
       </div>
     </section>
