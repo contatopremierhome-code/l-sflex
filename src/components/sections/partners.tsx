@@ -36,7 +36,7 @@ export default function Partners() {
               alt={logo.alt}
               width={logo.width}
               height={logo.height}
-              className="h-12 w-auto text-foreground/70"
+              className="h-16 w-auto text-foreground/70"
             />
           ))}
         </div>
