@@ -24,8 +24,8 @@ const steps = [
   },
   {
     icon: <CreditCard className="h-10 w-10 text-primary" />,
-    title: 'Pagamento',
-    description: 'O cliente paga só no final da quinzena.',
+    title: 'Pagamento Quinzenal',
+    description: 'Você acerta o pagamento de suas entregas a cada 15 dias.',
     step: 4,
   },
 ];
