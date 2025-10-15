@@ -8,7 +8,7 @@ export function Logo() {
         alt="L&S Flex Logo"
         width={200}
         height={80}
-        className="h-20 w-auto"
+        className="h-12 w-auto"
       />
     </a>
   );
