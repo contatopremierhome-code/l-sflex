@@ -6,9 +6,9 @@ export function Logo() {
       <Image
         src="https://i.imgur.com/SNJ2wK6.png"
         alt="L&S Flex Logo"
-        width={100}
-        height={40}
-        className="h-10 w-auto"
+        width={150}
+        height={60}
+        className="h-14 w-auto"
       />
     </a>
   );
