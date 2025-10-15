@@ -4,6 +4,7 @@ import Hero from '@/components/sections/hero';
 import HowItWorks from '@/components/sections/how-it-works';
 import Benefits from '@/components/sections/benefits';
 import Partners from '@/components/sections/partners';
+import Pricing from '@/components/sections/pricing';
 import Cta from '@/components/sections/cta';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <HowItWorks />
         <Benefits />
         <Partners />
+        <Pricing />
         <Cta />
       </main>
       <Footer />
