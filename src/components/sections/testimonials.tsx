@@ -43,7 +43,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-card py-12 lg:py-24">
+    <section className="bg-card py-12 lg:py-24" id="depoimentos">
       <div className="container">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl font-headline">
