@@ -1,15 +1,9 @@
-import Image from 'next/image';
-
 export function Logo() {
   return (
-    <a href="/" className="flex items-center gap-2">
-      <Image
-        src="https://i.imgur.com/SNJ2wK6.png"
-        alt="L&S Flex Logo"
-        width={200}
-        height={80}
-        className="h-12 w-auto"
-      />
+    <a href="/" className="flex items-center" aria-label="L&S Flex Home">
+      <span className="text-2xl font-bold tracking-tight text-foreground">
+        L&S Flex
+      </span>
     </a>
   );
 }
