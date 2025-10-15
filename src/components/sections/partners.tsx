@@ -3,19 +3,19 @@ import Image from 'next/image';
 const partnerLogos = [
   {
     src: 'https://i.imgur.com/U7qEiqW.png',
-    alt: 'Partner 1 Logo',
+    alt: 'Logo do Mercado Livre',
     width: 158,
     height: 48,
   },
   {
     src: 'https://i.imgur.com/WGCDbGk.png',
-    alt: 'Partner 2 Logo',
+    alt: 'Logo da Shopee',
     width: 158,
     height: 48,
   },
   {
     src: 'https://i.imgur.com/nrA4MEk.png',
-    alt: 'Partner 3 Logo',
+    alt: 'Logo da Magalu',
     width: 158,
     height: 48,
   },
