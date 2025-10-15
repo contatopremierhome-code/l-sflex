@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
+import WhatsappButton from '@/components/layout/whatsapp-button';
 
 export const metadata: Metadata = {
   title: 'L&S Flex | Entregas Rápidas para Mercado Livre e Shopee',
@@ -29,6 +30,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         {children}
+        <WhatsappButton />
         <Toaster />
       </body>
     </html>
