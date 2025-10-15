@@ -10,8 +10,8 @@ export default function Hero() {
       <div className="container grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
         <div className="text-center lg:text-left">
           <h1 className="text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl font-headline">
-            Entregas Flex Rápidas e Inteligentes para Mercado Livre, Shopee e
-            Magalu
+            Entregas Rápidas e no mesmo dia com Mercado Livre Flex, Shopee
+            Entrega Direta e Magalu
           </h1>
           <p className="mt-4 max-w-3xl text-lg text-muted-foreground md:text-xl">
             Atendemos São Paulo com agilidade, rastreamento em tempo real e
