@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check } from 'lucide-react';
 import { MercadoLivreLogo } from '../icons/mercadolivre-logo';
 import { ShopeeLogo } from '../icons/shopee-logo';
+import Image from 'next/image';
 
 const tiers = [
   {
@@ -30,9 +31,13 @@ const tiers = [
     buttonText: 'Contratar Agora',
     href: 'https://wa.me/5511993801750?text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+contratar+o+plano+Magalu%21',
     logo: (
-      <span className="text-2xl font-bold tracking-tight">
-        magalu
-      </span>
+      <Image
+        src="https://i.imgur.com/U7qEiqW.png"
+        alt="Mercado Livre Logo"
+        width={140}
+        height={35}
+        className="h-9 w-auto"
+      />
     ),
   },
   {
@@ -71,10 +76,10 @@ export default function Pricing() {
               className="flex flex-col rounded-lg border-2 border-primary/50 shadow-lg transition-transform hover:scale-105"
             >
               <CardHeader className="items-center">
-                <div className="flex items-center gap-4">
-                  {tier.logo}
-                </div>
-                <CardTitle className="text-2xl font-semibold mt-4">{tier.name}</CardTitle>
+                <div className="flex items-center gap-4 h-10">{tier.logo}</div>
+                <CardTitle className="text-2xl font-semibold mt-4">
+                  {tier.name}
+                </CardTitle>
                 <div className="mt-4 text-center">
                   <span className="text-4xl font-bold">{tier.price}</span>
                 </div>
