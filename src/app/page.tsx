@@ -10,6 +10,7 @@ import AttendedRegions from '@/components/sections/attended-regions';
 import ImageGallery from '@/components/sections/image-gallery';
 import PackageSize from '@/components/sections/package-size';
 import Warehouses from '@/components/sections/warehouses';
+import Faq from '@/components/sections/faq';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Partners />
         <Pricing />
         <AttendedRegions />
+        <Faq />
         <Cta />
       </main>
       <Footer />
