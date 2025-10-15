@@ -43,7 +43,7 @@ const benefits = [
     icon: <Smile className="h-10 w-10 text-primary" />,
     title: 'Profissionalismo',
     description:
-      'Entregadores uniformizados e sorrindo, levando uma boa experiência ao cliente.',
+      'Motoboys treinados para levar uma excelente experiência ao seu cliente.',
   },
   {
     icon: <Waypoints className="h-10 w-10 text-primary" />,
